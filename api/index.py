@@ -1,6 +1,9 @@
+import os
+from flask import Flask, Response
 from teleflask import Teleflask
 from teleflask.messages import TextMessage
-import os
+
+app = Flask(__name__)
 
 API_KEY = os.getenv("TELEGRAM_TOKEN")
 bot = Teleflask(API_KEY, app)
