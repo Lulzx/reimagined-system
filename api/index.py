@@ -30,7 +30,7 @@ def generate_cats():
     return t
         
     
-@app.route('/', methods=['GET'])
+@app.route('/me', methods=['GET'])
 def getme():
     TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
     bot = telegram.Bot(TELEGRAM_TOKEN)
