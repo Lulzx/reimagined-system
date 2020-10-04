@@ -5,7 +5,7 @@ import os
 API_KEY = os.getenv("TELEGRAM_TOKEN")
 bot = Teleflask(API_KEY, app)
 
-@app.route("/")
+@app.route("/api")
 def index():
     return "This is awesome, isn't it?"
 # end def
