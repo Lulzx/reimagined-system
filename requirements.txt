@@ -1,2 +1,3 @@
-cowpy==1.1.0
-teleflask==2.0.0.dev21
+cowpy
+teleflask
+flask
